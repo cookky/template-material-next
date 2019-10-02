@@ -45,8 +45,7 @@ const IndexPage = props => {
         <SecondaryLayout>
           <ContentLayout4 />
         </SecondaryLayout>
-
-
+        
           <ContentLayout6 />
 
       </AppLayout>
