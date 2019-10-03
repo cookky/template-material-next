@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Box, Button, Grid, Typography } from "@material-ui/core";
-import styles from "./styles/TopHeading.style";
+import styles from "./styles/TopHeadingAbout.style";
 import Container from "@material-ui/core/Container";
 import Hidden from "@material-ui/core/Hidden";
 
@@ -12,9 +12,8 @@ const TopHeading = props => {
     <div className={ classes.layout }>
       <Container maxWidth={ 'lg' }>
         <Box clone className={ classes.root }>
-          <Grid container>
-          <Grid item sm={ 2 }></Grid>
-            <Grid item sm={8}>
+          <Grid>
+            <Grid item sm={12}>
               <Box className={ classes.centerVertical }>
                 <Box>
                   <Typography className={ classes.heading } gutterBottom>
@@ -27,7 +26,6 @@ const TopHeading = props => {
                 </Box>
               </Box>
             </Grid>
-            <Grid item sm={ 2 }></Grid>
             {/* <Hidden smDown>
               <Grid item lg={6} md={6}>
                 <Box className={classes.centerVertical}>

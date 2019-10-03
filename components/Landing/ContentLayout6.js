@@ -27,18 +27,16 @@ const responsive = {
 
 const ContentLayout6 = props => {
     const classes = styles();
-    const imageUrl = '../../static/images/hacktag-space-regular-preview-1.jpg';
     return (
         <div>
             <Carousel
                 additionalTransfrom={0}
                 arrows
                 autoPlay={true}
-                autoPlaySpeed={3000}
+                autoPlaySpeed={2500}
                 centerMode={false}
                 containerClass="container"
                 dotListClass=""
-                draggable
                 focusOnSelect={false}
                 infinite
                 itemClass=""

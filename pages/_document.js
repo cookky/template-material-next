@@ -18,10 +18,10 @@ class MyDocument extends Document {
 					<meta name="theme-color" content={theme.palette.primary.main} />
 					<link rel="manifest" href="static/manifest.json" />
 					<link rel="icon" href="static/img/favicon.ico" />
-					<link rel="stylesheet" href="./static/fonts/google-sans/style.css"/>
-					<link rel="stylesheet" href="./static/fonts/custom-font.css"/>
-					<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap"/>
-					<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+					<link rel="stylesheet" href="./static/fonts/google-sans/style.css" />
+					<link rel="stylesheet" href="./static/fonts/custom-font.css" />
+					<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" />
+					<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 					<link rel="stylesheet" href="./node_modules/react-responsive-carousel/lib/styles/carousel.min.css" />
 				</Head>
 				<body>

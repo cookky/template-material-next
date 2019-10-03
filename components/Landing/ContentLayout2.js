@@ -17,6 +17,7 @@ const ContentLayout2 = () => {
       <Grid container spacing={1}>
 
         <Hidden smDown>
+
           <Grid item md={6} sm={12}>
             <Box className={classes.centerVertical}>
               <img src={imageUrl} width={'90%'} />
@@ -25,6 +26,9 @@ const ContentLayout2 = () => {
         </Hidden>
 
         <Hidden smUp>
+        <Typography component="h1" className={classes.sectionHeading}>
+            พบกับเราได้ที่
+          </Typography>
           <Grid item md={6} sm={12}>
             <Box className={classes.centerVertical}>
               <img src={imageUrl} width={'90%'} />
@@ -33,9 +37,11 @@ const ContentLayout2 = () => {
         </Hidden>
 
         <Grid item md={6} sm={12}>
+        <Hidden smDown>
           <Typography component="h1" className={classes.sectionHeading}>
             พบกับเราได้ที่
           </Typography>
+          </Hidden>
           <Box className={classes.box}>
             <Paper className={classes.paper}>
               <Typography variant="h5" component="h3">

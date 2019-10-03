@@ -221,6 +221,13 @@ const NavBar = () => {
               <ListItemText primary="Contact"/>
             </ListItem>
           </Link>
+
+          <Link href="/about" activeClassName={ classes.drawerItemActive }>
+            <ListItem button className={ classes.listItem }>
+              {/*<ListItemIcon>{index % 2 === 0 ? <InboxIcon/> : <MailIcon/>}</ListItemIcon>*/ }
+              <ListItemText primary="About"/>
+            </ListItem>
+          </Link>
         </List>
       </div>
       <Divider/>
@@ -272,20 +279,27 @@ const NavBar = () => {
                   </Link>
                 </li>
                 <li>
-                  <a href="#">Contact</a>
+                <Link href="/contact" activeClassName={ classes.topNavItemActive }>
+                    <a>Contant</a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/about" activeClassName={ classes.topNavItemActive }>
+                    <a>About</a>
+                  </Link>
                 </li>
               </ul>
 
-              <IconButton color="inherit">
+              {/* <IconButton color="inherit">
                 <Badge badgeContent={ 4 } color="secondary">
                   <NotificationsNoneIcon/>
                 </Badge>
               </IconButton>
               <Button color="primary" className={ classes.button }>
                 Log In
-              </Button>
+              </Button> */}
               <Button variant="contained" color="primary" className={ classes.button }>
-                Sign Up
+                โทร
               </Button>
 
             </Hidden>

@@ -5,9 +5,9 @@ const withPlugins = require('next-compose-plugins');
 const withCSS = require("@zeit/next-css");
 
 const withCSSOptions = {
-  cssLoaderOptions: {
-    url: false
-  }
+	cssLoaderOptions: {
+		url: false
+	}
 }
 
 const progressBarOptions = {
@@ -51,9 +51,9 @@ const offlineOptions = {
 
 const plugins = [
 	withOffline(offlineOptions),
-  withProgressBar(progressBarOptions),
-  withCSS(withCSSOptions)
-  
+	withProgressBar(progressBarOptions),
+	withCSS(withCSSOptions)
+
 ]
 
 module.exports = withPlugins(plugins);

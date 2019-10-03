@@ -3,7 +3,7 @@ import {makeStyles} from "@material-ui/core";
 const styles = makeStyles(theme => ({
   sectionContainer: {
     [theme.breakpoints.down('sm')]: {
-      textAlign: 'center',
+      textAlign: 'center'
     }
   },
   sectionHeading: {
@@ -11,13 +11,9 @@ const styles = makeStyles(theme => ({
     fontWeight: 'bold',
     lineHeight: '48px',
     color: '#3e4246',
-    paddingBottom: '10px',
-    paddingLeft: '20px',
+    textAlign: 'center',
     [theme.breakpoints.down('sm')]: {
-      marginBottom: 48,
-      textAlign: 'center',
-      width: '100%',
-      padding: 0
+      marginBottom: 48
     }
   },
   sectionBody: {
@@ -31,15 +27,16 @@ const styles = makeStyles(theme => ({
   },
   paper: {
     padding: theme.spacing(2),
-    textAlign: 'left',
-    color: theme.palette.text.secondary
-  },
-  box: {
-    padding: '10px'
+    textAlign: 'center',
+    color: theme.palette.text.secondary,
   },
   centerVertical: {
-    padding: theme.spacing(2),
+    padding: theme.spacing(1),
     textAlign: 'center'
+  },
+  img: {
+    borderRadius:'10px',
+    // boxShadow: '1px 1px 8px'
   },
   grid: {
     display: 'flex',

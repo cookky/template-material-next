@@ -14,7 +14,6 @@ import PrimaryLayout from "../components/Landing/PrimaryLayout";
 import HightLightLayout from "../components/Landing/HightLightLayout";
 
 const IndexPage = props => {
-
   return (
     <div>
       <AppLayout>
@@ -23,9 +22,7 @@ const IndexPage = props => {
         </Head>
         <TopHeading
           imageUrl="./static/images/landing/hacktag-landing-1-x.svg"
-          heading1={'Co-working Space'}
-          heading2={''}
-          heading3={''}
+          heading={'Co-working Space'}
           body={'The place you can make something you want to be ' +
             'thigh efficiency and share your experience to other ' +
             'and adapt by yourself learning and share to community.'}
