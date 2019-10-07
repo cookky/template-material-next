@@ -19,7 +19,7 @@ const ContentAboutLayout3 = props => {
 					We have facilities for you. Here is same your home.
 				</Typography>
 			</Box>
-			<Grid container spacing={6}>
+			<Grid container spacing={3}>
 				<Grid item md={4} sm={4} xs={12}>
 					<CardContentAbout2
 						title="Cozy Working Desk"

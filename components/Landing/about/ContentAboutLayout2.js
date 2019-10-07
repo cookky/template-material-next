@@ -21,7 +21,7 @@ const ContentAboutLayout2 = props => {
 				</Typography>
 			</Box>
 			<Hidden smDown>
-			<Grid container spacing={1}>
+			<Grid container spacing={3}>
 				<Grid item sm={3}>
 					<CardContentAbout
 						title="Cozy Working Desk"

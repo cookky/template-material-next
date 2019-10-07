@@ -1,16 +1,14 @@
-import React from 'react'
+import React from 'react';
 import Head from "next/head";
 import AppLayout from "../components/AppLayout/AppLayout";
 import TopHeadingAbout from "../components/Landing/about/TopHeadingAbout";
 import SecondaryLayout from "../components/Landing/SecondaryLayout";
-import ContentAboutLayout1 from "../components/Landing/about/ContentAboutLayout1";
-import ContentAboutLayout2 from "../components/Landing/about/ContentAboutLayout2";
-import ContentAboutLayout3 from "../components/Landing/about/ContentAboutLayout3";
 import HightLightLayout from "../components/Landing/HightLightLayout";
 import ContentLayout7 from "../components/Landing/ContentLayout7";
+import CourseLayout1 from "../components/Landing/course/CourseLayout1";
+import CourseLayout2 from "../components/Landing/course/CourseLayout2";
 
-const About = props => {
-
+const Course = () => {
     return (
         <div>
             <AppLayout>
@@ -19,29 +17,21 @@ const About = props => {
                 </Head>
                 <TopHeadingAbout
                     imageUrl=""
-                    heading={'About'}
+                    heading={'Course'}
                     body={''}
                 />
 
                 <SecondaryLayout>
-                    <ContentAboutLayout1 />
-                </SecondaryLayout>
-
-                <SecondaryLayout>
-                    <ContentAboutLayout2 />
-                </SecondaryLayout>
-
-                <SecondaryLayout>
-                    <ContentAboutLayout3 />
+                    <CourseLayout1 />
                 </SecondaryLayout>
 
                 <HightLightLayout>
-                    <ContentLayout7 />
-                </HightLightLayout>
+				<CourseLayout2 />
+			</HightLightLayout>
 
             </AppLayout>
         </div>
     );
-};
+}
 
-export default About
+export default Course;

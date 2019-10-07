@@ -40,6 +40,7 @@ const styles = makeStyles(theme => ({
     // textShadow: '4px 3px 2px #000000'
   },
   body: {
+    textAlign:'center',
     fontSize: '22px',
     color: '#fff',
     // textShadow: '2px 2px 4px #000000'

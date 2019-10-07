@@ -11,7 +11,7 @@ import WatchLaterIcon from '@material-ui/icons/WatchLater';
 
 const ContentLayout2 = () => {
   const classes = styles();
-  const imageUrl = '../../static/images/5cdd0e93dd56266b587b6d07_hbe-04-p-800.png';
+  const imageUrl = '../../static/images/2562-10-04 11_10_32.png';
   return (
     <div className={classes.root}>
       <Grid container spacing={1}>
@@ -20,7 +20,7 @@ const ContentLayout2 = () => {
 
           <Grid item md={6} sm={12}>
             <Box className={classes.centerVertical}>
-              <img src={imageUrl} width={'90%'} />
+              <img src={imageUrl} width={'100%'} />
             </Box>
           </Grid>
         </Hidden>
@@ -31,7 +31,7 @@ const ContentLayout2 = () => {
           </Typography>
           <Grid item md={6} sm={12}>
             <Box className={classes.centerVertical}>
-              <img src={imageUrl} width={'90%'} />
+              <img src={imageUrl} width={'100%'} />
             </Box>
           </Grid>
         </Hidden>
@@ -59,7 +59,7 @@ const ContentLayout2 = () => {
                 <Grid container spacing={2}>
                   <Grid item md={1} sm={12}></Grid>
                   <Grid item md={11} sm={12}>
-                    ชั้น 19 อาคารสีลมคอมเพล๊กซ์ สีลม บางรัก กรุงเทพฯ 10500 เดินเพียง 5 นาที จากสถานีรถไฟฟ้า BTS ศาลาแดง
+                  154 ถนน เหล่านาดี ตำบล ในเมือง อำเภอ เมือง จังหวัด ขอนแก่น 40000 <br/>โทร 082 104 5733
                   </Grid>
                 </Grid>
               </Typography>

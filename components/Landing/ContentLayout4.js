@@ -20,7 +20,7 @@ const ContentLayout4 = props => {
 					Safe services of our co-working for you.
 				</Typography>
 				<Box>
-					<Grid container spacing={6}>
+					<Grid container spacing={4}>
 						<Grid item md={3} sm={6} xs={12}>
 							<CardContentIcon label="CCTV" icon={<ThumbUpIcon/>}/>
 						</Grid>

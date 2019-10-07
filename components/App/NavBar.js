@@ -176,72 +176,76 @@ const NavBar = () => {
   const sideList = side => (
     <div
       role="presentation"
-      onClick={ toggleDrawer(side, false) }
-      onKeyDown={ toggleDrawer(side, false) }
+      onClick={toggleDrawer(side, false)}
+      onKeyDown={toggleDrawer(side, false)}
     >
 
       <IconButton
-        className={ classes.menuClose }
+        className={classes.menuClose}
         color="inherit"
         aria-label="Close drawer"
         edge="start"
       >
-        <CloseIcon/>
+        <CloseIcon />
       </IconButton>
-      <Divider/>
-      <div className={ classes.list }>
+      <Divider />
+      <div className={classes.list}>
         <List>
-          <Link href="/" activeClassName={ classes.drawerItemActive }>
-            <ListItem button className={ classes.listItem }>
-              {/*<ListItemIcon>{index % 2 === 0 ? <InboxIcon/> : <MailIcon/>}</ListItemIcon>*/ }
-              <ListItemText primary="Service"/>
+          <Link href="/" activeClassName={classes.drawerItemActive}>
+            <ListItem button className={classes.listItem}>
+              {/*<ListItemIcon>{index % 2 === 0 ? <InboxIcon/> : <MailIcon/>}</ListItemIcon>*/}
+              <ListItemText primary="Service" />
             </ListItem>
           </Link>
-          <Link href="/community" activeClassName={ classes.drawerItemActive }>
-            <ListItem button className={ classes.listItem }>
-              {/*<ListItemIcon>{index % 2 === 0 ? <InboxIcon/> : <MailIcon/>}</ListItemIcon>*/ }
-              <ListItemText primary="Community"/>
+          <Link href="/community" activeClassName={classes.drawerItemActive}>
+            <ListItem button className={classes.listItem}>
+              {/*<ListItemIcon>{index % 2 === 0 ? <InboxIcon/> : <MailIcon/>}</ListItemIcon>*/}
+              <ListItemText primary="Community" />
             </ListItem>
           </Link>
-          <Link href="/course" activeClassName={ classes.drawerItemActive }>
-            <ListItem button className={ classes.listItem }>
-              {/*<ListItemIcon>{index % 2 === 0 ? <InboxIcon/> : <MailIcon/>}</ListItemIcon>*/ }
-              <ListItemText primary="Course"/>
+          <Link href="/course" activeClassName={classes.drawerItemActive}>
+            <ListItem button className={classes.listItem}>
+              {/*<ListItemIcon>{index % 2 === 0 ? <InboxIcon/> : <MailIcon/>}</ListItemIcon>*/}
+              <ListItemText primary="Course" />
             </ListItem>
           </Link>
-          <Link href="/pricing" activeClassName={ classes.drawerItemActive }>
-            <ListItem button className={ classes.listItem }>
-              {/*<ListItemIcon>{index % 2 === 0 ? <InboxIcon/> : <MailIcon/>}</ListItemIcon>*/ }
-              <ListItemText primary="Pricing"/>
+          <Link href="/pricing" activeClassName={classes.drawerItemActive}>
+            <ListItem button className={classes.listItem}>
+              {/*<ListItemIcon>{index % 2 === 0 ? <InboxIcon/> : <MailIcon/>}</ListItemIcon>*/}
+              <ListItemText primary="Pricing" />
             </ListItem>
           </Link>
-          <Link href="/contact" activeClassName={ classes.drawerItemActive }>
-            <ListItem button className={ classes.listItem }>
-              {/*<ListItemIcon>{index % 2 === 0 ? <InboxIcon/> : <MailIcon/>}</ListItemIcon>*/ }
-              <ListItemText primary="Contact"/>
+          <Link href="/contact" activeClassName={classes.drawerItemActive}>
+            <ListItem button className={classes.listItem}>
+              {/*<ListItemIcon>{index % 2 === 0 ? <InboxIcon/> : <MailIcon/>}</ListItemIcon>*/}
+              <ListItemText primary="Contact" />
             </ListItem>
           </Link>
 
-          <Link href="/about" activeClassName={ classes.drawerItemActive }>
-            <ListItem button className={ classes.listItem }>
-              {/*<ListItemIcon>{index % 2 === 0 ? <InboxIcon/> : <MailIcon/>}</ListItemIcon>*/ }
-              <ListItemText primary="About"/>
+          <Link href="/about" activeClassName={classes.drawerItemActive}>
+            <ListItem button className={classes.listItem}>
+              {/*<ListItemIcon>{index % 2 === 0 ? <InboxIcon/> : <MailIcon/>}</ListItemIcon>*/}
+              <ListItemText primary="About" />
             </ListItem>
           </Link>
         </List>
       </div>
-      <Divider/>
-      <div className={ classes.list }>
+      <Divider />
+      <div className={classes.list}>
         <Grid container>
-          <Grid item sm={ 6 } xs={ 12 }>
+          {/* <Grid item sm={ 6 } xs={ 12 }>
             <Button color="primary" className={ classes.drawerButton } fullWidth={ true }>
               Log In
             </Button>
-          </Grid>
-          <Grid item sm={ 6 } xs={ 12 }>
-            <Button variant="contained" color="primary" className={ classes.drawerButton } fullWidth={ true }>
+          </Grid> */}
+          <Grid item sm={6} xs={12}>
+            {/* <Button variant="contained" color="primary" className={ classes.drawerButton } fullWidth={ true }>
               Sign Up
-            </Button>
+            </Button> */}
+
+            <Button variant="contained" color="primary" className={classes.drawerButton} fullWidth={ true } href="tel:0821045733">
+              โทร
+              </Button>
           </Grid>
         </Grid>
       </div>
@@ -249,42 +253,46 @@ const NavBar = () => {
   );
 
   return (
-    <div className={ classes.root }>
-      <AppBar position="fixed" className={ classes.appbar } color={ "default" }>
+    <div className={classes.root}>
+      <AppBar position="fixed" className={classes.appbar} color={"default"}>
         <Container maxWidth="lg">
-          <Toolbar className={ classes.toolBar }>
-            <Typography className={ classes.title } variant="h6" noWrap>
+          <Toolbar className={classes.toolBar}>
+            <Typography className={classes.title} variant="h6" noWrap>
               <Link href="/">
-                <a className={ classes.brand }>
-                  <img className={ classes.logoBrand } src="./static/images/hacktag-logo.svg" alt="Hacktag Space"/>
+                <a className={classes.brand}>
+                  <img className={classes.logoBrand} src="./static/images/hacktag-logo.svg" alt="Hacktag Space" />
                 </a>
               </Link>
             </Typography>
             <Hidden smDown>
-              <ul className={ classes.topNavListsContainer }>
+              <ul className={classes.topNavListsContainer}>
                 <li>
-                  <Link href="/" activeClassName={ classes.topNavItemActive }>
+                  <Link href="/" activeClassName={classes.topNavItemActive}>
                     <a>Service</a>
                   </Link>
                 </li>
                 <li>
-                  <a href="#">Community</a>
+                <Link href="/community" activeClassName={classes.topNavItemActive}>
+                    <a>Community</a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">Course</a>
+                <Link href="/course" activeClassName={classes.topNavItemActive}>
+                    <a>Course</a>
+                  </Link>
                 </li>
                 <li>
-                  <Link href="/pricing" activeClassName={ classes.topNavItemActive }>
+                  <Link href="/pricing" activeClassName={classes.topNavItemActive}>
                     <a>Pricing</a>
                   </Link>
                 </li>
                 <li>
-                <Link href="/contact" activeClassName={ classes.topNavItemActive }>
+                  <Link href="/contact" activeClassName={classes.topNavItemActive}>
                     <a>Contant</a>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about" activeClassName={ classes.topNavItemActive }>
+                  <Link href="/about" activeClassName={classes.topNavItemActive}>
                     <a>About</a>
                   </Link>
                 </li>
@@ -298,26 +306,26 @@ const NavBar = () => {
               <Button color="primary" className={ classes.button }>
                 Log In
               </Button> */}
-              <Button variant="contained" color="primary" className={ classes.button }>
+              <Button variant="contained" color="primary" className={classes.button}>
                 โทร
               </Button>
 
             </Hidden>
             <Hidden mdUp>
               <IconButton
-                onClick={ toggleDrawer('right', true) }
+                onClick={toggleDrawer('right', true)}
                 color="inherit"
                 aria-label="Open drawer"
                 edge="start"
-                className={ classes.menuButton }
+                className={classes.menuButton}
               >
-                <MenuIcon/>
+                <MenuIcon />
               </IconButton>
             </Hidden>
           </Toolbar>
         </Container>
-        <Drawer anchor="right" open={ state.right } onClose={ toggleDrawer('right', false) }>
-          { sideList('right') }
+        <Drawer anchor="right" open={state.right} onClose={toggleDrawer('right', false)}>
+          {sideList('right')}
         </Drawer>
       </AppBar>
     </div>
