@@ -16,7 +16,7 @@ const ContentAboutLayout3 = props => {
 					พบกับทีมของเรา
 				</Typography>
 				<Typography className={classes.sectionBody}>
-					We have facilities for you. Here is same your home.
+				เราได้รับทีมผู้นำที่มีประสบการณ์ในอุตสาหกรรมที่หลากหลาย
 				</Typography>
 			</Box>
 			<Grid container spacing={3}>

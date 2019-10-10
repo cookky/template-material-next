@@ -18,15 +18,14 @@ const ContentLayout3 = props => {
 
           <Grid item md={6} sm={12}>
             <Typography component="h1" className={classes.sectionHeading}>
-              Co-working Space
+              คุณกำลังมองหาห้องประชุมอยู่หรือเปล่า?
           </Typography>
             <Typography className={classes.sectionBody}>
-              Work from home is an ideal way to a startup business which changes a
-              white-collar to a self-employed or a freelancer.
-              What challenge is, you have to invest in everything with your own money, then manage them to get the profit.
+              ห้องประชุมของฮับบาเงียบสงบ กว้างขวาง และให้บริการอย่างดีเยี่ยม เหมาะสำหรับการประชุม การฝึกอบรม งานอีเว้นท์ หรือเวิร์กชอปต่างๆ
+  เรามีพื้นที่ที่หลากหลาย เหมาะสำหรับการจัดกิจกรรมในหลายรูปแบบของคุณ
           </Typography>
 
-          {/* <Box className={classes.button}>
+            {/* <Box className={classes.button}>
             <Button variant="outlined" color="primary" className={classes.button}>
               Read
       		</Button>
@@ -56,7 +55,7 @@ const ContentLayout3 = props => {
         <Grid container spacing={1} className={classes.grid}>
 
           <Grid item md={6} sm={12}>
-            
+
 
             <Hidden smDown>
               <Box className={classes.centerVertical}>
@@ -67,15 +66,13 @@ const ContentLayout3 = props => {
 
           <Grid item md={6} sm={12}>
             <Typography component="h1" className={classes.sectionHeading}>
-              Co-working Space
+            คุณกำลังมองหาพื้นที่ทำงานสำหรับทีมของคุณอยู่หรือเปล่า?
           </Typography>
             <Typography className={classes.sectionBody}>
-              Work from home is an ideal way to a startup business which changes a
-              white-collar to a self-employed or a freelancer.
-              What challenge is, you have to invest in everything with your own money, then manage them to get the profit.
+            เราจัดเตรียมสำนักงานส่วนตัวในหลากหลายขนาดที่คุณจะสามารถเข้าใช้งานได้ตลอด 24 ชั่วโมง พร้อมทั้งเข้าถึงอีเว้นท์และคอมมูนิตี้ของฮับบาได้เช่นกัน
           </Typography>
 
-          <Hidden smUp>
+            <Hidden smUp>
               <Box className={classes.centerVertical}>
                 <img src={imageUrl} width={'100%'} className={classes.img} />
               </Box>
@@ -94,15 +91,13 @@ const ContentLayout3 = props => {
 
           <Grid item md={6} sm={12}>
             <Typography component="h1" className={classes.sectionHeading}>
-              Co-working Space
+            งานพบปะสังสรรค์
           </Typography>
             <Typography className={classes.sectionBody}>
-              Work from home is an ideal way to a startup business which changes a
-              white-collar to a self-employed or a freelancer.
-              What challenge is, you have to invest in everything with your own money, then manage them to get the profit.
+            เราจัดเตรียมพื้นที่เพื่อให้สมาชิกได้มีโอกาสพบปะพูดคุยกันเกี่ยวกับความสนใจและความถนัดของตน
           </Typography>
 
-          {/* <Box className={classes.button}>
+            {/* <Box className={classes.button}>
             <Button variant="outlined" color="primary" className={classes.button}>
               Read
       		</Button>

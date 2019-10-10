@@ -14,22 +14,18 @@ const ContentLayout1 = props => {
     <div className={classes.root}>
 
       <Box className={classes.sectionContainer}>
-        <Grid container spacing={1} className={classes.grid}>
+        <Grid container spacing={2} className={classes.grid}>
 
           <Grid item md={6} sm={12}>
             <Typography component="h1" className={classes.sectionHeading}>
-              Co-working Space
+              Hacktag Space คืออะไร
           </Typography>
             <Typography className={classes.sectionBody}>
-              Work from home is an ideal way to a startup business which changes a
-              white-collar to a self-employed or a freelancer.
-              What challenge is, you have to invest in everything with your own money, then manage them to get the profit.
+            Hacktag Space ถือกำเนิดขึ้นในฐานะพื้นที่ร่วมทำงานแห่งแรกของประเทศไทยในปี 2555 Hacktag Space เติบโตอย่างรวดเร็วจนกลายเป็นเครือข่าย coworking space ที่ขับเคลื่อนด้วยเทคโนโลยีและผู้ริเริ่มองค์กรด้วยพันธกิจเพื่อให้ธุรกิจเติบโตทั่วโลกผ่านความร่วมมือของชุมชน ปัจจุบัน Hacktag Space มี coworking space 5 แห่งทั่วประเทศไทยและอีก 3 แห่งที่วางแผนไว้ในช่วงปลายปี 2562 รวมถึงพื้นที่นานาชาติแห่งแรกของ Hacktag Space
+Hacktag Space ได้รับชื่อเสียงอย่างรวดเร็วภายในชุมชนองค์กรในฐานะองค์กรที่อำนวยความสะดวกในการคิดเชิงนวัตกรรมกระตุ้นให้ Hacktag Space พัฒนาบริการด้านการสร้างและขับเคลื่อนด้วยเทคโนโลยีสำหรับหุ้นส่วนของเรา
+ด้วยการใช้ประโยชน์จากพื้นที่และความเชี่ยวชาญของเรา Hacktag Space ดำเนินกิจกรรมด้านระบบนิเวศและการฝึกอบรมตามความต้องการอย่างต่อเนื่องตั้งแต่การแข่งขันแฮ็คแฮมตันและการแข่งขันระดับพิตต์ไปจนถึงโปรแกรมเร่งระดับนานาชาติที่จัดการเต็มรูปแบบ
           </Typography>
-            <Typography className={classes.sectionBody}>
-              <b>Co-working space</b> is the answer to what you've been searching for.
-              This type of office will effectively help you prepare for your jobs, which suitable to you, for starting your own business without any additional investment.
-              You only have to pay for what you need in your daily jobs!
-          </Typography>
+            
           </Grid>
 
           <Hidden smUp>

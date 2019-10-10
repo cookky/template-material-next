@@ -6,6 +6,7 @@ const styles = makeStyles(theme => ({
       textAlign: 'center'
     }
   },
+
   sectionHeading: {
     fontSize: 38,
     fontWeight: 'bold',
@@ -44,6 +45,30 @@ const styles = makeStyles(theme => ({
 		justifyContent: 'center',
 		alignItems: 'center'
   },
+  headOverflow:{
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+  },
+  dateOverflow:{
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    color: '#918989',
+    fontSize: '16px',
+    margin: 'auto'
+  },
+  textOverflow:{
+    whiteSpace: 'normal',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    height: '45px',
+    color: '#918989'
+  },
+  Card:{
+    paddingTop:20,
+    paddingBottom:20
+  }
 
 }));
 

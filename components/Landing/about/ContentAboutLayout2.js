@@ -14,10 +14,10 @@ const ContentAboutLayout2 = props => {
 		<div className={classes.root}>
 			<Box className={classes.sectionContainer}>
 				<Typography className={classes.sectionHeading}>
-					Our Facility
+				บริการของเรา
 				</Typography>
 				<Typography className={classes.sectionBody}>
-					We have facilities for you. Here is same your home.
+				Hacktag Space เริ่มต้นจากพื้นที่ทำงานและตอนนี้ให้บริการและผลิตภัณฑ์ที่หลากหลาย
 				</Typography>
 			</Box>
 			<Hidden smDown>

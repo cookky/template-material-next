@@ -14,22 +14,16 @@ const ContentLayout1 = props => {
     <div className={classes.root}>
 
       <Box className={classes.sectionContainer}>
-        <Grid container spacing={1} className={classes.grid}>
+        <Grid container spacing={2} className={classes.grid}>
 
           <Grid item md={6} sm={12}>
             <Typography component="h1" className={classes.sectionHeading}>
-              Co-working Space
+            คุณกำลังมองหาพื้นที่ทำงานสำหรับทีมของคุณอยู่หรือเปล่า?
           </Typography>
             <Typography className={classes.sectionBody}>
-              Work from home is an ideal way to a startup business which changes a
-              white-collar to a self-employed or a freelancer.
-              What challenge is, you have to invest in everything with your own money, then manage them to get the profit.
+            ฮับบาจัดเตรียมสำนักงานส่วนตัวในหลากหลายขนาดที่คุณจะสามารถเข้าใช้งานได้ตลอด 24 ชั่วโมง พร้อมทั้งเข้าถึงอีเว้นท์และคอมมูนิตี้ของฮับบาได้เช่นกัน เรามีสำนักงานส่วนตัวพร้อมต้อนรับคุณทั้งสี่สาขาของเรา
           </Typography>
-            <Typography className={classes.sectionBody}>
-              <b>Co-working space</b> is the answer to what you've been searching for.
-              This type of office will effectively help you prepare for your jobs, which suitable to you, for starting your own business without any additional investment.
-              You only have to pay for what you need in your daily jobs!
-          </Typography>
+            
           </Grid>
 
           <Hidden smUp>

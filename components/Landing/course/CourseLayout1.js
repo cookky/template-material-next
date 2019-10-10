@@ -8,11 +8,13 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
+import Hidden from '@material-ui/core/Hidden';
 import Typography from '@material-ui/core/Typography';
 import { Tab, Tabs, withStyles } from "@material-ui/core";
 import Link from "../../App/Link";
 import { findAll } from "../../../services/course.api";
 const server = require('../../../services/server.config');
+import { Facebook } from 'react-social-sharing'
 
 
 const useFindAll = () => {
@@ -37,7 +39,7 @@ const useFindAll = () => {
 const CardCourse = (props) => {
     const classes = styles();
     const listCourse = props.data;
-    const imageUrl = '../../static/images/hacktag-space-regular-preview-1.jpg';
+    const shareUrl = 'https://www.facebook.com/';
 
     return (
         <Box className={classes.sectionContainer}>
@@ -49,41 +51,92 @@ const CardCourse = (props) => {
                 Pictures of work atmosphere in our co-working space.
 				</Typography>
 
-            <Grid container spacing={3}>
+
+
+            <Grid spacing={3}>
                 {listCourse.map((data, key) => (
 
-                    <Grid item md={3} sm={12}>
-                        <Card>
-                            <CardActionArea>
-                                <CardMedia
-                                    component="img"
-                                    alt="Contemplative Reptile"
-                                    height="140"
-                                    image={`${server.api_url}/images/${data.image}`}
-                                    title="Contemplative Reptile"
-                                />
-                                <CardContent>
-                                    <Typography gutterBottom variant="h5" component="h2">
-                                        {data.title}
-                                    </Typography>
-                                    <Typography gutterBottom component="h5">
-                                        {data.date}
-                                    </Typography>
-                                    <Typography variant="body2" color="textSecondary" component="p">
-                                        {data.detail}
-                                    </Typography>
-                                </CardContent>
-                            </CardActionArea>
-                            <CardActions>
-                                <Button size="small" color="primary">
-                                    Share
+
+
+                    <Hidden smUp>
+                        <Grid item md={3} sm={12} class={classes.Card}>
+                            <Card>
+                                <CardActionArea>
+                                    <CardMedia
+                                        component="img"
+                                        alt="Contemplative Reptile"
+                                        height="140"
+                                        image={`${server.api_url}/images/${data.image}`}
+                                        title="Contemplative Reptile"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="h2" class={classes.headOverflow}>
+                                            {data.title}
+                                        </Typography>
+                                        <Typography gutterBottom component="h5" class={classes.dateOverflow}>
+                                            {data.date}
+                                        </Typography>
+                                        <Typography variant="body2" color="textSecondary" component="p" class={classes.textOverflow}>
+                                            {data.detail}
+                                        </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                                <CardActions>
+                                <Facebook link={shareUrl} />
+                                    <Link
+                                        href={{ pathname: '/coursedetail', query: { id: `${data.id}` } }}
+                                        as="/detail">
+                                        <Button size="small" color="primary">
+                                            Learn More
                                 </Button>
-                                <Button size="small" color="primary">
-                                    Learn More
+                                    </Link>
+                                </CardActions>
+                            </Card>
+                        </Grid>
+                    </Hidden>
+
+
+                ))}
+            </Grid>
+            <Grid container spacing={3}>
+
+                {listCourse.map((data, key) => (
+                    <Hidden smDown>
+                        <Grid item md={3} sm={12}>
+                            <Card>
+                                <CardActionArea>
+                                    <CardMedia
+                                        component="img"
+                                        alt="Contemplative Reptile"
+                                        height="140"
+                                        image={`${server.api_url}/images/${data.image}`}
+                                        title="Contemplative Reptile"
+                                    />
+                                    <CardContent>
+                                        <Typography gutterBottom variant="h5" component="h2" class={classes.headOverflow}>
+                                            {data.title}
+                                        </Typography>
+                                        <Typography gutterBottom component="h5" class={classes.dateOverflow}>
+                                            {data.date}
+                                        </Typography>
+                                        <Typography variant="body2" color="textSecondary" component="p" class={classes.textOverflow}>
+                                            {data.detail}
+                                        </Typography>
+                                    </CardContent>
+                                </CardActionArea>
+                                <CardActions>
+                                <Facebook link={shareUrl} />
+                                    <Link
+                                        href={{ pathname: '/coursedetail', query: { id: `${data.id}` } }}
+                                        as="/detail">
+                                        <Button size="small" color="primary">
+                                            Learn More
                                 </Button>
-                            </CardActions>
-                        </Card>
-                    </Grid>
+                                    </Link>
+                                </CardActions>
+                            </Card>
+                        </Grid>
+                    </Hidden>
 
                 ))}
 
