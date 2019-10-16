@@ -233,17 +233,17 @@ const NavBar = () => {
       <Divider />
       <div className={classes.list}>
         <Grid container>
-          {/* <Grid item sm={ 6 } xs={ 12 }>
-            <Button color="primary" className={ classes.drawerButton } fullWidth={ true }>
+          <Grid item sm={6} xs={12}>
+            <Button color="primary" className={classes.drawerButton} fullWidth={true}>
               Log In
             </Button>
-          </Grid> */}
+          </Grid>
           <Grid item sm={6} xs={12}>
             {/* <Button variant="contained" color="primary" className={ classes.drawerButton } fullWidth={ true }>
               Sign Up
             </Button> */}
 
-            <Button variant="contained" color="primary" className={classes.drawerButton} fullWidth={ true } href="tel:0821045733">
+            <Button variant="contained" color="primary" className={classes.drawerButton} fullWidth={true} href="tel:0821045733">
               โทร
               </Button>
           </Grid>
@@ -272,12 +272,12 @@ const NavBar = () => {
                   </Link>
                 </li>
                 <li>
-                <Link href="/community" activeClassName={classes.topNavItemActive}>
+                  <Link href="/community" activeClassName={classes.topNavItemActive}>
                     <a>Community</a>
                   </Link>
                 </li>
                 <li>
-                <Link href="/course" activeClassName={classes.topNavItemActive}>
+                  <Link href="/course" activeClassName={classes.topNavItemActive}>
                     <a>Course</a>
                   </Link>
                 </li>
@@ -302,10 +302,14 @@ const NavBar = () => {
                 <Badge badgeContent={ 4 } color="secondary">
                   <NotificationsNoneIcon/>
                 </Badge>
-              </IconButton>
-              <Button color="primary" className={ classes.button }>
-                Log In
-              </Button> */}
+              </IconButton> */}
+
+              <Link href="/about" activeClassName={classes.topNavItemActive}>
+                <Button color="primary" className={classes.button}>
+                  Log In
+              </Button>
+              </Link>
+              
               <Button variant="contained" color="primary" className={classes.button}>
                 โทร
               </Button>
