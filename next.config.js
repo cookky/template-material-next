@@ -1,4 +1,3 @@
-
 const withOffline = require('next-offline')
 const withProgressBar = require('next-progressbar')
 const withPlugins = require('next-compose-plugins');
@@ -44,6 +43,11 @@ const offlineOptions = {
 				options: {
 					cacheName: 'http-cache'
 				}
+			},
+			{
+				test: /\.css$/,
+				exclude: /node_modules/,
+				loaders: ['style-loader', 'css-loader'],
 			}
 		]
 	}
@@ -57,5 +61,3 @@ const plugins = [
 ]
 
 module.exports = withPlugins(plugins);
-
-

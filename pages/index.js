@@ -13,6 +13,7 @@ import ContentLayout6 from "../components/Landing/ContentLayout6";
 import PrimaryLayout from "../components/Landing/PrimaryLayout";
 import HightLightLayout from "../components/Landing/HightLightLayout";
 
+
 const IndexPage = props => {
   return (
     <div>
