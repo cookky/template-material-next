@@ -287,7 +287,7 @@ const NavBar = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" activeClassName={classes.topNavItemActive}>
+                  
                     <a>Contant</a>
                   </Link>
                 </li>
