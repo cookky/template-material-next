@@ -5,7 +5,7 @@ const withCSS = require("@zeit/next-css");
 
 const withCSSOptions = {
 	cssLoaderOptions: {
-		url: true
+		url: false
 	}
 }
 
