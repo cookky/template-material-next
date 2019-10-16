@@ -153,6 +153,9 @@ const useStyles = makeStyles(theme => ({
   drawerItemActive: {
     backgroundColor: '#F7F7F7',
     color: '#2962FF'
+  },
+  aStyle: {
+    textDecoration: 'none'
   }
 }));
 
@@ -234,9 +237,11 @@ const NavBar = () => {
       <div className={classes.list}>
         <Grid container>
           <Grid item sm={6} xs={12}>
+          <a  href="http://167.172.66.16:3000" target="_blank" class={classes.aStyle}>
             <Button color="primary" className={classes.drawerButton} fullWidth={true}>
               Log In
             </Button>
+            </a>
           </Grid>
           <Grid item sm={6} xs={12}>
             {/* <Button variant="contained" color="primary" className={ classes.drawerButton } fullWidth={ true }>
@@ -304,11 +309,11 @@ const NavBar = () => {
                 </Badge>
               </IconButton> */}
 
-              <Link href="/about" activeClassName={classes.topNavItemActive}>
+              <a href="http://167.172.66.16:3000" target="_blank"  class={classes.aStyle}>
                 <Button color="primary" className={classes.button}>
                   Log In
               </Button>
-              </Link>
+              </a>
               
               <Button variant="contained" color="primary" className={classes.button}>
                 โทร
