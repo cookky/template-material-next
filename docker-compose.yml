@@ -4,5 +4,15 @@ services:
     build: ./
   nginx:
     build: ./docker/nginx
+    networks:
+      - default
+      - api-net
     ports:
       - 80:80
+
+networks:
+  default:
+    driver: bridge
+  api-net:
+    external:
+       name: template-adonis_default
