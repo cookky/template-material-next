@@ -1,6 +1,6 @@
 FROM nginx:alpine
 
-RUN apk update && apk add bas
+RUN apk update && apk add bash
 
 # Remove any existing config files
 RUN rm /etc/nginx/conf.d/*
